@@ -1,0 +1,163 @@
+/* algemeen */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background-image: linear-gradient(180deg, #442e59, #000000);
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Zen Dots', cursive;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--orange);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2,
+h3 {
+    font-size: 25px;
+}
+
+p {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* variables */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --orange: #f19a30;
+    --purple: #442e59;
+}
+
+/* gericht */
+
+main section.head {
+    margin: 3em 0 5em 0;
+}
+
+main section.head ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin: 1em;
+}
+
+.container section:nth-of-type(2) article:first-of-type ul li img {
+    width: 25vw;
+}
+
+.playbutton {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+
+    border-left: 60px solid var(--orange);
+
+    transform: scale(0.4);
+
+    cursor: pointer;
+}
+
+.container section:nth-of-type(2) article:nth-of-type(2) ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* height: 20vw; */
+}
+
+.container section:nth-of-type(2) article:nth-of-type(2) ul li {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+/* chart */
+
+.container section.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0 3em 0;
+}
+
+.container section.chart article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container section.chart article svg {
+    align-self: flex-start;
+    width: 1150px;
+    height: 750px;
+    margin-top: -7em;
+}
+
+text {
+    color: var(--white);
+    font-family: 'Zen Dots', cursive;
+    font-size: 1em;
+}
+
+path {
+    color: var(--white);
+}
+
+.tick {
+    color: var(--white);
+}
+
+.labels {
+    font-size: 1.2em;
+}
+
+/* tooltips */
+
+#tooltip {
+    position: absolute;
+    background: var(--purple);
+    color: #ffffff;
+    font-family: 'Zen Dots', cursive;
+    font-size: 1em;
+    padding: 0.5em;
+    box-shadow: 5px 3px 14px -1px rgba(0, 0, 0, 0.46);
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}

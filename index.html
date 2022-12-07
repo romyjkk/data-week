@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataweek</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- first section -->
+        <section class="head">
+            <ul>
+                <li>
+                    <h1>Tame Impala</h1>
+                </li>
+                <li>
+                    <h1>Currents</h1>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container">
+            <!-- first section -->
+            <section>
+                <h2>Top 5 most streamed 'Currents' songs</h2>
+            </section>
+
+            <!-- second section -->
+            <section>
+                <article>
+                    <ul>
+                        <li><img src="images/album.png" alt="The less I know the better on Spotify"></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <ul class="buttons">
+                        <li>
+                            <div class="playbutton"></div>
+                            <!-- <div class="pausebutton"></div> -->
+                            <p>1. The less I know the better</p>
+                        </li>
+                        <li>
+                            <div class="playbutton"></div>
+                            <p>2. Let It Happen</p>
+                        </li>
+                        <li>
+                            <div class="playbutton"></div>
+                            <p>3. New Person, Same Old Mistakes</p>
+                        </li>
+                        <li>
+                            <div class="playbutton"></div>
+                            <p>4. Eventually</p>
+                        </li>
+                        <li>
+                            <div class="playbutton"></div>
+                            <p>5. Yes I'm Changing</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- third section -->
+            <section class="chart">
+                <ul>
+                    <li>
+                        <h2>Spotify streams per song</h2>
+                    </li>
+                </ul>
+
+                <article>
+                    <svg class="barchart"></svg>
+
+                    <div id="tooltip"></div>
+                </article>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/sounds.js"></script>
+</body>
+
+</html>
