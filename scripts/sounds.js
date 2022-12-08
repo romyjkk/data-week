@@ -24,6 +24,10 @@ yesImChangingButton.addEventListener('click', toggleYesImChanging);
 function toggleTheLess() {
     if (theLess.paused) {
         theLess.play();
+        letItHappen.pause();
+        newPerson.pause();
+        eventually.pause();
+        yesImChanging.pause();
     } else {
         theLess.pause();
     }
@@ -32,6 +36,10 @@ function toggleTheLess() {
 function toggleLetItHappen() {
     if (letItHappen.paused) {
         letItHappen.play();
+        newPerson.pause();
+        eventually.pause();
+        yesImChanging.pause();
+        theLess.pause();
     } else {
         letItHappen.pause();
     }
@@ -40,6 +48,10 @@ function toggleLetItHappen() {
 function toggleNewPerson() {
     if (newPerson.paused) {
         newPerson.play();
+        eventually.pause();
+        yesImChanging.pause();
+        theLess.pause();
+        letItHappen.pause();
     } else {
         newPerson.pause();
     }
@@ -48,6 +60,10 @@ function toggleNewPerson() {
 function toggleEventually() {
     if (eventually.paused) {
         eventually.play();
+        yesImChanging.pause();
+        theLess.pause();
+        letItHappen.pause();
+        newPerson.pause();
     } else {
         eventually.pause();
     }
@@ -56,6 +72,10 @@ function toggleEventually() {
 function toggleYesImChanging() {
     if (yesImChanging.paused) {
         yesImChanging.play();
+        theLess.pause();
+        letItHappen.pause();
+        newPerson.pause();
+        eventually.pause();
     } else {
         yesImChanging.pause();
     }
